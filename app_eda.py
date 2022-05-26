@@ -9,14 +9,23 @@ import plotly.offline as pyo
 def run_eda() :
     
     df1 = pd.read_csv('data/dataset.csv')
-    
+
     # Disease Pie Chart
     fig1 = px.pie(df1, names='Disease',
                 title = '질병 종류')
     st.plotly_chart(fig1)
 
+
+    # 데이터의 NaN 값
+    fig2 = px.imshow(df1.isnull(), 
+                        color_continuous_scale='agsunset', 
+                        title = 'NaN Data')
+    st.plotly_chart(fig2)
+
+    # 질병별 증상
     disease_list = df1['Disease'].unique().tolist()
-    st.write('질병별 증상들 집계')
+    st.write()
+    st.subheader('질병별 증상들 집계')
     choice = st.selectbox('질병 선택', disease_list)
     if st.button('결과') :
         if len(choice) != 0 :
