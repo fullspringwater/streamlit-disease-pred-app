@@ -7,11 +7,12 @@ import plotly.graph_objs as go
 import plotly.offline as pyo
 
 def run_eda() :
+    
     df1 = pd.read_csv('data/dataset.csv')
     
     # Disease Pie Chart
     fig1 = px.pie(df1, names='Disease',
-                title = 'Diseases')
+                title = '질병 종류')
     st.plotly_chart(fig1)
 
     disease_list = df1['Disease'].unique().tolist()

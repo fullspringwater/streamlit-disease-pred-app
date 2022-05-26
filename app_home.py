@@ -1,6 +1,7 @@
 import streamlit as st
 
 def run_home() :
+    
     st.header('EDA')
     st.subheader('데이터 시각화')
 
