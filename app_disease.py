@@ -30,7 +30,7 @@ def run_disease() :
             new_data = new_data.reshape(1,17)
             new_pred = classifier.predict(new_data)[0]
             
-            st.write('당신의 예상 질병은 {} 입니다.'.format(new_pred))
+            st.subheader('당신의 예상 질병은 {} 입니다.'.format(new_pred))
             
             # Description 추출
             st.subheader('{} 에 대한 설명'.format(new_pred))
