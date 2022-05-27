@@ -1,5 +1,5 @@
 import streamlit as st
-
+from streamlit_option_menu import option_menu
 from app_disease import run_disease
 from app_eda import run_eda
 from app_home import run_home
