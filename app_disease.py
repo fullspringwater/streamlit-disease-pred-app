@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 def run_disease() :
     st.subheader('증상을 선택하시면 질병을 예측합니다.')
-    df = pd.read_csv('data/Symptom-severity.csv')
+    df = pd.read_csv('data/new_symptom_weight.csv', index_col= 0)
     df2 = pd.read_csv('data/disease_disc_prec.csv', index_col=0)
     
     symp_list = df['Symptom'].values.tolist()
