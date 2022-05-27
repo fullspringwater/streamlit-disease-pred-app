@@ -10,8 +10,7 @@ from sklearn.metrics import confusion_matrix, accuracy_score
 
 def run_eda():
 
-    df1 = pd.read_csv('data/dataset.csv')
-
+    df1 = pd.read_csv('data/new_dataset.csv', index_col=0)
     # Disease Pie Chart
     fig1 = px.pie(df1, names='Disease',
                   title='질병 종류', width=900, height=800)
@@ -29,7 +28,7 @@ def run_eda():
     trace2 = go.Bar(x=df_disease_cnt['Disease'],
                     y=df_disease_cnt['Count'])
     data1 = [trace2]
-    layout = go.Layout(title='Number of Symptom Data by Disease')
+    layout = go.Layout(title='질병 데이터별 증상 데이터 합')
     fig3 = go.Figure(data=data1, layout=layout)
     st.plotly_chart(fig3)
 
@@ -57,6 +56,8 @@ def run_eda():
             st.plotly_chart(fig4)
 
     # 테스트 모델에 대한 질병 예측 정확도
+
+    st.subheader('')
     y_test = joblib.load('data/y_test.pkl')
     y_pred = joblib.load('data/y_pred.pkl')
     accuracy = round(accuracy_score(y_test, y_pred)*100, 2)
