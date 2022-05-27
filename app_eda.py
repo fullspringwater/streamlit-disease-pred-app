@@ -26,7 +26,8 @@ def run_eda():
     df_disease_cnt = pd.read_csv('data/disease_cnt.csv',
                                  index_col=0)
     trace2 = go.Bar(x=df_disease_cnt['Disease'],
-                    y=df_disease_cnt['Count'])
+                    y=df_disease_cnt['Count'],
+                    marker_color = 'lightsalmon')
     data1 = [trace2]
     layout = go.Layout(title='질병 데이터별 증상 데이터 합')
     fig3 = go.Figure(data=data1, layout=layout)
