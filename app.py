@@ -7,25 +7,24 @@ from app_home import run_home
 def main() :
     st.title('증상으로 질병 예측하기 프로젝트')
     menu = ['Home', 'EDA', 'Disease Pred']
-    st.sidebar.image("data/disease.jpg", use_column_width=True)
-    choice_menu = st.sidebar.selectbox('메뉴 선택', menu)
-
-    if choice_menu == menu[0] :
+    with st.sidebar:
+        st.sidebar.image("data/disease.jpg", use_column_width=True)
+        choose = option_menu("Menu", menu,
+                            icons=['house', 'graph-up', 'book'],
+                            menu_icon="app-indicator", default_index=0,
+                            styles={
+            "container": {"padding": "5!important", "background-color": "#44475A5"},
+            "icon": {"color": "orange", "font-size": "25px"}, 
+            "nav-link": {"font-size": "16px", "text-align": "left", "margin":"0px", "--hover-color": "#BD93F9"},
+            "nav-link-selected": {"background-color": "#02ab21"},
+        }
+        )
+    if choose == menu[0] :
         run_home()
-    elif choice_menu == menu[1] :
+    elif choose == menu[1] :
         run_eda()
-    elif choice_menu == menu[2] :
+    elif choose == menu[2] :
         run_disease()
-    st.markdown(
-                """
-            <style>
-            .sidebar .sidebar-content {
-                background-image: linear-gradient(#2e7bcf,#2e7bcf);
-                color: white;
-            }
-            </style>
-            """,
-    unsafe_allow_html=True,
-    )
+
 if __name__=='__main__' :
     main()
