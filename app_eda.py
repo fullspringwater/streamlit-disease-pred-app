@@ -1,13 +1,9 @@
-from re import M
 import joblib
 import pandas as pd
 import streamlit as st
-import matplotlib.pyplot as plt
-import seaborn as sns
 import plotly.express as px
-import plotly.graph_objs as go
-from sklearn.metrics import confusion_matrix, accuracy_score
-
+from sklearn.metrics import accuracy_score
+from PIL import Image
 
 def run_eda():
 
@@ -73,12 +69,9 @@ def run_eda():
     y_test = joblib.load('data/y_test.pkl')
     y_pred = joblib.load('data/y_pred.pkl')
     accuracy = round(accuracy_score(y_test, y_pred)*100, 2)
-    cm = confusion_matrix(y_test, y_pred)
 
     st.subheader('테스트 모델에 대한 질병 예측 정확도')
     st.subheader('{} % 입니다'.format(accuracy))
-    if st.checkbox('Confusion Matrix 표시') :
-        fig5 = px.imshow(cm, text_auto = True,
-                        width=800, height = 900,
-                        color_continuous_scale='ylgn')
-        st.plotly_chart(fig5)
+    img = Image.open('data/cm.png')
+    st.image(img)
+
