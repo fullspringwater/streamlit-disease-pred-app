@@ -5,6 +5,7 @@ from app_eda import run_eda
 from app_home import run_home
 
 def main() :
+    st.set_page_config(layout="wide")
     st.title('증상으로 질병 예측하기 프로젝트')
     menu = ['Home', 'EDA', 'Disease Pred']
     with st.sidebar:
