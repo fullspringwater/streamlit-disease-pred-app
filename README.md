@@ -39,6 +39,10 @@ pip install joblib
 
 <img width="1179" alt="svm" src="https://user-images.githubusercontent.com/105832330/172291034-6aad1ee9-83a7-4958-a6c0-0a681fde9879.png">
 
+✅ GridSearch로 가장 정확도가 높은 파라미터를 구했습니다.
+
+![grid](https://user-images.githubusercontent.com/105832330/172301486-409e3555-74f5-4254-a609-e3a4beb729f3.PNG)
+
 
 
 ## 💿 Usage
