@@ -30,13 +30,14 @@ pip install joblib
 
 ✅ Support Vector Machine 알고리즘을 통해 가장 유사한 질병을 예측했습니다.
 
+<img width="1179" alt="svm" src="https://user-images.githubusercontent.com/105832330/172291034-6aad1ee9-83a7-4958-a6c0-0a681fde9879.png">
 
 
 
 ## 💿 Usage
 
 ### 실행하기
-![netflix_app_begin](https://user-images.githubusercontent.com/105832330/172275238-ffbab2d0-c37a-4ca4-8ddf-ab2db13ece13.gif)
+
 
 ### 테스트
-![netflix_app_test](https://user-images.githubusercontent.com/105832330/172278582-f52e660b-2491-492b-a061-2fd570e59677.gif)
+
