@@ -37,6 +37,7 @@ pip install joblib
 ## 💿 Usage
 
 ### 실행하기
+![disease_app_begin](https://user-images.githubusercontent.com/105832330/172292448-651ddc49-7eac-4203-ab88-80b6c7c2e7e1.gif)
 
 
 ### 테스트
