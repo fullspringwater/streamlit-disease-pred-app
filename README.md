@@ -1,10 +1,10 @@
 <h1 align="center"> 🙌 streamlit-disease-pred-app</h1>
 
 ## 📃 Description
+✅ 자신이 가진 증상을 체크해 그 증상들을 가지면 어떤 질병이 생길 가능성이 높은지를 예측하는 프로젝트입니다.
 
 ✅ 데이터 셋에 대한 EDA 결과를 볼 수 있습니다.
 
-✅ 자신의 증상을 통해 어떤 질병을 가질 가능성이 높은지 알 수 있습니다.
 
 ## 📘 Dataset Source
 
