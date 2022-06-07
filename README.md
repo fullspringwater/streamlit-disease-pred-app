@@ -41,4 +41,5 @@ pip install joblib
 
 
 ### 테스트
+![disease_app_test](https://user-images.githubusercontent.com/105832330/172293800-74360634-5790-4bc0-b80a-e3e3bd5a9b05.gif)
 
