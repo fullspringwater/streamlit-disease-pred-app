@@ -16,15 +16,22 @@ https://www.kaggle.com/datasets/itachi9604/disease-symptom-description-dataset?s
 ✅ Python 3.7
 
 ##
-## 🔨 Prerequisite
+## 🔨 Installation
 
 ```
 pip install streamlit
 ```
 
 ```
+pip install streamlit-option-menu
+```
+
+```
 pip install joblib
 ```
+
+
+
 
 ## 💼 Classifier
 
