@@ -49,6 +49,11 @@ pip install scikit-learn
 
 ![grid](https://user-images.githubusercontent.com/105832330/172301486-409e3555-74f5-4254-a609-e3a4beb729f3.PNG)
 
+✅ 정확도
+![disease_accuracy](https://user-images.githubusercontent.com/105832330/172575747-0f45069b-a7f1-435a-8310-f4fb824ab448.JPG)
+
+✅ Confusion Matrix
+![cm](https://user-images.githubusercontent.com/105832330/172575896-8f23b23a-0c4a-49a3-bb49-144d488dc8bc.png)
 
 
 ## 💿 Usage
