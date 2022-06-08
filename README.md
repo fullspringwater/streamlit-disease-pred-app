@@ -5,7 +5,7 @@
 
 ✅ 데이터 셋에 대한 EDA 결과를 볼 수 있습니다.
 
-
+✅ 질병 예측은 Support Vector Machine 알고리즘을 이용했습니다.
 ## 📘 Dataset Source
 
  👉 출처 : https://www.kaggle.com/datasets/itachi9604/disease-symptom-description-dataset?select=dataset.csv
@@ -60,3 +60,4 @@ pip install scikit-learn
 ### 테스트
 ![disease_app_test](https://user-images.githubusercontent.com/105832330/172293800-74360634-5790-4bc0-b80a-e3e3bd5a9b05.gif)
 
+### Url
