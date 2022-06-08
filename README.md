@@ -30,7 +30,13 @@ pip install streamlit-option-menu
 pip install joblib
 ```
 
+```
+pip install plotly==5.8.0
+```
 
+```
+pip install scikit-learn
+```
 
 
 ## 💼 Classifier
